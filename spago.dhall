@@ -10,7 +10,7 @@ When creating a new Spago project, you can use
 `spago init --no-comments` or `spago init -C`
 to generate this file without the comments in this block.
 -}
-{ name = "quickcheck"
+{ name = "hby-quickcheck"
 , dependencies =
   [ "arrays"
   , "assert"
@@ -41,7 +41,6 @@ to generate this file without the comments in this block.
   , "tailrec"
   , "transformers"
   , "tuples"
-  , "unfoldable"
   ]
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs", "test/**/*.purs" ]

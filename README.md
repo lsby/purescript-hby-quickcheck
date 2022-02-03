@@ -1,18 +1,48 @@
-# purescript-quickcheck
+#
 
-[![Latest release](http://img.shields.io/github/release/purescript/purescript-quickcheck.svg)](https://github.com/purescript/purescript-quickcheck/releases)
-[![Build status](https://github.com/purescript/purescript-quickcheck/workflows/CI/badge.svg?branch=master)](https://github.com/purescript/purescript-quickcheck/actions?query=workflow%3ACI+branch%3Amaster)
-[![Pursuit](https://pursuit.purescript.org/packages/purescript-quickcheck/badge)](https://pursuit.purescript.org/packages/purescript-quickcheck)
-
-An implementation of QuickCheck in PureScript.
-
-## Installation
+## 使用
 
 ```
-spago install quickcheck
+in  upstream
+  with hby-quickcheck =
+      { dependencies =
+          [ "arrays"
+          , "assert"
+          , "console"
+          , "control"
+          , "effect"
+          , "either"
+          , "enums"
+          , "exceptions"
+          , "foldable-traversable"
+          , "gen"
+          , "identity"
+          , "integers"
+          , "lazy"
+          , "lcg"
+          , "lists"
+          , "math"
+          , "maybe"
+          , "newtype"
+          , "nonempty"
+          , "numbers"
+          , "partial"
+          , "prelude"
+          , "psci-support"
+          , "record"
+          , "st"
+          , "strings"
+          , "tailrec"
+          , "transformers"
+          , "tuples"
+          ]
+      , repo =
+          "https://github.com/lsby/purescript-hby-quickcheck"
+      , version =
+          "ls_v1.0.0"
+      }
 ```
 
-## Documentation
-
-- [Guide](GUIDE.md)
-- Module documentation is [published on Pursuit](http://pursuit.purescript.org/packages/purescript-quickcheck).
+```
+spago install hby-quickcheck
+```
